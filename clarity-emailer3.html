@@ -180,9 +180,37 @@
     .headline {
       color: #4d8ed7;
       font-size: 18px;
+      font-weight: normal;
     }
 
-    .event-info {
+    .headline b {
+      font-weight: bold;
+      color: #4d8ed7;
+      font-size: 18px;
+    }
+
+    .blue-text {
+      color: #4d8ed7;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .quote p {
+      font-size: 16px;
+      color: #4d8ed7;
+      text-align: center;
+    }
+
+    .quote__cite p {
+      color: #484c53;
+      font-style: italic;
+      font-size: 12px;
+      text-align: center;
+      line-height: 1;
+      margin: 10px 0 0;
+    }
+
+    /* .event-info {
       margin-bottom: 30px;
     }
 
@@ -193,16 +221,12 @@
 
     .event-info__item p {
       display: inline;
-    }
+    } */
 
 
-    .blue-text {
-      color: #4d8ed7;
-      font-weight: bold;
-      display: inline-block;
-    }
 
-    .event-details__item b {
+
+    /* .event-details__item b {
       display: block;
       color: #484c53;
       margin-bottom: 2px;
@@ -211,7 +235,7 @@
     .event-details__item p {
       color: #484c53;
       max-width: 300px;
-    }
+    } */
 
     .col__textblock {
       vertical-align: top;
@@ -285,6 +309,11 @@
       text-transform: uppercase;
       text-decoration: none !important;
       letter-spacing: .5px;
+    }
+
+    .col__imgblock {
+      margin-top: 6px;
+      width: 100%;
     }
 
     .col__imgblock-1 {
@@ -405,8 +434,8 @@
                   <table role="presentation">
                     <tr>
                       <td style="padding:30px 20px;">
-                        <h2 class="headline">Welcome to the Clarity Robotics Talent Community!</h2>
-                        <p>As part of our network, you’ll receive job alerts for positions that match your skills and background. We’ll also keep you up-to-date on the exciting work we’re doing and the innovative people who are making it happen.</p>
+                        <h2 class="headline"><b>Clarity Spotlight:</b> Software Engineers</h2>
+                        <p>As a Software Engineer focused on advancing AI, you’ll help develop next generation applications for cutting-edge technologies. You’ll write code, develop proof of concepts, iterate based on data and feedback and present your strategy to engineering managers. It’s a hands-on job where you’ll get to touch all aspects of Clarity’s software organization, from ideation to creation to execution – all while helping us drive the future of robotics.</p>
                       </td>
                     </tr>
                   </table>
@@ -414,9 +443,57 @@
                 </td>
 
               </tr>
-
+              <!-- End Section 1 -->
 
               <!-- Section 2 -->
+
+              <tr>
+                <td>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td style="background:#eaeaea; padding:30px 20px;">
+
+                    <table>
+
+                      <tr>
+                        <td class="quote">
+                          <p> “I wasn’t sure what to expect when I joined the Clarity team, but I’m so proud of the work I’ve done with this team.”</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="quote__cite">
+                          <p>Melinda, Software Engineer</p>
+                        </td>
+                      </tr>
+                    </table>
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+
+          </tr>
+          <!-- End Section 2 -->
+
+
+          <!-- Stand alone button -->
+              <tr>
+
+                <td align="center" style="padding: 10px;">
+                  <table class="button-table" style="margin: 20px auto 20px;">
+                    <tr>
+                      <td align="center" class="button-td">
+                        <a href="https://link.goesnowhere.com" class="button-a">explore software engineering roles</a></td>
+                    </tr>
+                  </table>
+
+                </td>
+              </tr>
+
+          <!-- End Stand alone button -->
+
+          <!-- Section 3 -->
 
               <table role="presentation" width="100%">
                 <tr>
@@ -436,7 +513,7 @@
 
                             <tr>
                               <td class="col__textblock">
-                                <p class="col__text">Learn about our <br> hiring process,<br> from application<br> to offer letter.</p>
+                                <p class="col__text">Learn more about our mission, values and what drives us to create the future.</p>
                               </td>
                             </tr>
                           </table>
@@ -444,9 +521,9 @@
                           <table class="col__imgblock">
                             <tr>
                               <td>
-                                <img class="col__img" src="https://tbcdn.talentbrew.com/company/3461/crm/robot-hand.jpg" alt="logo">
+                                <img class="col__img" src="https://tbcdn.talentbrew.com/company/3461/crm/brooklyn.png" alt="logo">
                                 <p class="col__link">
-                                  <a href="https://link.goesnowhere.com">See our hiring process</a>
+                                  <a href="https://link.goesnowhere.com">See our Company</a>
                                 </p>
                               </td>
                             </tr>
@@ -469,7 +546,7 @@
 
                       <tr>
                         <td class="col__textblock">
-                          <p class="col__text">Read about our history,<br> leadership team, and<br> the inspiring work we <br>do each day.</p>
+                          <p class="col__text">Read about our flexible WFH policy, tuition reimbursement and more.</p>
                         </td>
                       </tr>
 
@@ -480,13 +557,14 @@
                         <td>
                           <img class="col__img" src="https://tbcdn.talentbrew.com/company/3461/crm/award.jpg" alt="logo">
                           <p class="col__link">
-                            <a href="https://link.goesnowhere.com">Read About Us</a>
+                            <a href="https://link.goesnowhere.com">See Our Benefits</a>
                           </p>
                         </td>
                       </tr>
                     </table>
 
                   </td><!-- End Column 2 -->
+
 
 
 
@@ -502,7 +580,7 @@
 
                       <tr>
                         <td class="col__textblock">
-                          <p class="col__text">Explore our state-of-art<br> office located in the<br> heart of NYC.</p>
+                          <p class="col__text">Discover our innovative projects and imaginative solutions.</p>
                         </td>
                       </tr>
                     </table>
@@ -510,9 +588,9 @@
                     <table class="col__imgblock-2">
                       <tr>
                         <td>
-                          <img class="col__img" src="https://tbcdn.talentbrew.com/company/3461/crm/brooklyn.png" alt="logo">
+                          <img class="col__img" src="https://tbcdn.talentbrew.com/company/3461/crm/robot-hand.jpg" alt="logo">
                           <p class="col__link">
-                            <a href="https://link.goesnowhere.com">EXPLORE OUR HEADQUARTERS</a>
+                            <a href="https://link.goesnowhere.com">EXPLORE OUR Work</a>
                           </p>
                         </td>
                       </tr>
@@ -525,32 +603,14 @@
               </table>
 
 
-              <!-- End Section 2 -->
+              <!-- End Section 3 -->
 
-
-              <!-- Stand alone button -->
-
-              <tr>
-
-                <td align="center" style="padding: 10px;">
-                  <table class="button-table" style="margin: 20px auto 20px;">
-                    <tr>
-                      <td align="center" class="button-td">
-                        <a href="https://link.goesnowhere.com" class="button-a">Search Jobs</a></td>
-                    </tr>
-                  </table>
-                  <!--  End Stand alone button -->
-
-
-                  <!-- End of content-->
-                </td><!-- End of content TD-->
-              </tr><!-- End of content TR-->
             </table>
 
 
 
             <!-- Start of footer -->
-            <table role="presentation" style="width: 100%;">
+            <table role="presentation" style="width: 100%; margin-top: 13px;">
               <tr>
                 <td>
                   <!-- Start of Stay Connected -->
